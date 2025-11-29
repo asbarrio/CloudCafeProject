@@ -1,0 +1,258 @@
+/* JavaFX CSS - Cloud Café "Quirky Cloud" Theme */
+
+/* --- ROOT & FONT --- */
+.root-pane {
+    -fx-background-color: #F4F7F6; /* Flat, clean background */
+    -fx-font-family: "Century Gothic", "Comic Sans MS", "Chalkboard SE", sans-serif;
+}
+
+/* --- TEXT STYLES --- */
+.title-label {
+    -fx-font-size: 36px; 
+    -fx-font-weight: bold;
+    -fx-text-fill: #0077B6; /* Cloud Blue */
+    -fx-effect: dropshadow(gaussian, rgba(0,119,182,0.1), 0, 0, 0, 1);
+}
+
+.sub-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #8D6E63; /* Coffee Brown */
+    -fx-font-style: italic;
+}
+
+.header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4E342E;
+}
+
+/* --- CARDS (Super Rounded & Floating) --- */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 30px; /* Big rounded corners */
+    -fx-border-radius: 30px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 15, 0, 0, 5);
+    -fx-padding: 30px;
+}
+
+/* --- INPUT FIELDS (Pill Shape) --- */
+.text-field, .password-field, .combo-box {
+    -fx-background-color: #FAFAFA;
+    -fx-border-color: #CFD8DC;
+    -fx-border-width: 1.5px;
+    -fx-background-radius: 30px; /* Pill shape */
+    -fx-border-radius: 30px; 
+    -fx-padding: 10px 15px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #4E342E;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #0077B6;
+    -fx-background-color: white;
+}
+
+/* --- BUTTONS (Bubbly) --- */
+.button {
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 25px;
+    -fx-background-radius: 30px; /* Fully rounded bubbly buttons */
+    -fx-border-radius: 30px;
+    -fx-transition-duration: 0.2s;
+}
+
+/* Primary Blue Button */
+.module-button, .replenish-button {
+    -fx-background-color: #0077B6; /* Flat Blue */
+    -fx-text-fill: white;
+}
+.module-button:hover, .replenish-button:hover {
+    -fx-background-color: #0096C7;
+    -fx-scale-x: 1.05; /* Pop effect */
+    -fx-scale-y: 1.05;
+}
+
+/* Secondary Coffee Button */
+.coffee-button {
+    -fx-background-color: #6D4C41; /* Flat Brown */
+    -fx-text-fill: white;
+}
+.coffee-button:hover {
+    -fx-background-color: #8D6E63;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Red / Danger Button */
+.deduct-button, .exit-button {
+    -fx-background-color: #FFEBEE;
+    -fx-text-fill: #D32F2F;
+    -fx-border-color: #FFCDD2;
+}
+.deduct-button:hover, .exit-button:hover {
+    -fx-background-color: #FFCDD2;
+}
+
+/* Disabled */
+.module-button-disabled {
+    -fx-background-color: #E0E0E0;
+    -fx-text-fill: #9E9E9E;
+}
+
+/* --- TABLE VIEW --- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+.table-view .column-header {
+    -fx-background-color: #0077B6;
+    -fx-background-radius: 10px 10px 0 0; 
+    -fx-padding: 8px;
+    -fx-border-width: 0;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #EEEEEE transparent;
+}
+.table-row-cell:selected {
+    -fx-background-color: #E1F5FE;
+    -fx-text-fill: #0077B6;
+    -fx-background-radius: 10px;
+}
+
+/* --- SCROLL PANE (Hidden/Subtle) --- */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* --- LINKS --- */
+.create-acc-link {
+    -fx-text-fill: #0077B6;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-underline: true;
+}
+.create-acc-link:visited {
+    -fx-text-fill: #0077B6;
+}
+
+/* ========================================== */
+/* IMPROVED TABLE MAP DESIGN  (Visual upgrade) */
+/* ========================================== */
+
+/* Layout Containers for Zones (Dashed Borders) */
+.area-box {
+    -fx-border-color: #B0BEC5;
+    -fx-border-width: 2px;
+    -fx-border-style: dashed;
+    -fx-padding: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Base Table Button Style */
+.table-btn {
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0, 0, 2);
+    -fx-transition-duration: 0.2s;
+    /* Override default button roundness for specific shapes */
+    -fx-background-radius: 0; 
+}
+
+/* Hover Effect: Lift up slightly */
+.table-btn:hover {
+    -fx-translate-y: -2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8, 0, 0, 4);
+}
+
+/* Selected Effect: Strong Glow & Border */
+.table-btn:selected {
+    -fx-effect: dropshadow(gaussian, #0077B6, 15, 0.4, 0, 0);
+    -fx-border-color: #0077B6;
+    -fx-border-width: 3px;
+    -fx-border-style: solid;
+    -fx-translate-y: 0; /* Reset lift */
+}
+
+/* --- Specific Table Shapes --- */
+
+/* VIP Tables (Gold/Brown, Booth shape - Wide Rectangle) */
+.table-vip {
+    -fx-background-color: #D4AF37; /* Gold */
+    -fx-text-fill: #3E2723;
+    -fx-background-radius: 10px;
+    -fx-min-width: 120px;
+    -fx-min-height: 70px; /* Slightly taller for booth feel */
+    -fx-border-radius: 10px;
+}
+.table-vip:selected { 
+    -fx-background-color: #FFC107; /* Brighter Gold */
+}
+
+/* Regular 4-Seater (Coffee Brown, Rounded Square) */
+.table-reg-4 {
+    -fx-background-color: #8D6E63;
+    -fx-background-radius: 15px; /* Rounded Square */
+    -fx-min-width: 85px;
+    -fx-min-height: 85px;
+    -fx-border-radius: 15px;
+}
+.table-reg-4:selected { 
+    -fx-background-color: #A1887F; 
+}
+
+/* Regular 2-Seater (Blue, Perfect Circle) */
+.table-reg-2 {
+    -fx-background-color: #90E0EF;
+    -fx-text-fill: #0077B6;
+    -fx-background-radius: 50em; /* Forces perfect circle */
+    -fx-min-width: 65px;
+    -fx-min-height: 65px;
+    -fx-border-radius: 50em;
+}
+.table-reg-2:selected { 
+    -fx-background-color: #CAF0F8; 
+}
+
+/* --- RECEIPT POPUP STYLES --- */
+.receipt-box {
+    -fx-background-color: #FDFBF7; /* Off-white paper color */
+    -fx-background-radius: 0;      /* Square edges like paper */
+    -fx-padding: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);
+    -fx-border-color: #E0E0E0;
+    -fx-border-width: 1px;
+}
+
+.receipt-title {
+    -fx-font-family: "Courier New", monospace; /* Classic receipt font */
+    -fx-font-weight: 900;
+    -fx-font-size: 28px;
+    -fx-text-fill: #333333;
+    -fx-alignment: CENTER;
+}
+
+.receipt-text {
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,11 @@
+ID,Capacity,IsVIP,Status,Customer
+VIP 1,4,true,AVAILABLE,None
+T4,2,false,AVAILABLE,None
+VIP 2,4,true,AVAILABLE,None
+T5,2,false,AVAILABLE,None
+T6,2,false,AVAILABLE,None
+T7,2,false,AVAILABLE,None
+T8,2,false,AVAILABLE,None
+Table 1,4,false,AVAILABLE,None
+Table 3,4,false,AVAILABLE,None
+Table 2,4,false,AVAILABLE,None
