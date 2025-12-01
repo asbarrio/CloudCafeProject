@@ -12,7 +12,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import javafx.scene.text.Font; // <--- ADDED THIS IMPORT
+import javafx.scene.text.Font; 
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.time.LocalDateTime;
@@ -480,4 +480,5 @@ public class CashTransactionScreen {
         l.getStyleClass().add("receipt-text");
         container.getChildren().add(l);
     }
+
 }
